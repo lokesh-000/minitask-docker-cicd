@@ -19,5 +19,5 @@ def list_tasks():
 @app.post("/tasks", status_code=201)
 def create_task(task: TaskCreate):
     new_task = {"id": len(TASKS) + 1, "title": task.title, "done": False}
-    TASKS.append(new_task)
+    TASKS.append(task)
     return new_task
