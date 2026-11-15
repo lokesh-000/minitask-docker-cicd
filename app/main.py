@@ -10,7 +10,7 @@ class TaskCreate(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "devil"}
+    return {"status": "ok"}
 
 @app.get("/tasks")
 def list_tasks():
